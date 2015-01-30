@@ -81,9 +81,10 @@ function loadSlider(slider,default_text){
 }
 
 (function($) {
-    $.fn.createDiagonalSlider = function(default_text) {
+    $.fn.createDiagonalSlider = function() {
         var slider = $(this);
         var doit;
+        var default_text = $('.content_slider').find('.content_title').attr('data-default-text');
 
         loadSlider(slider, default_text);        
         function resizedw(){

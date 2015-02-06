@@ -86,7 +86,10 @@ function loadSlider(slider,default_text){
         var doit;
         var default_text = $('.content_slider').find('.content_title').attr('data-default-text');
 
-        loadSlider(slider, default_text);        
+        setTimeout(function(){
+            loadSlider(slider, default_text);
+        }, 10);
+        
         function resizedw(){
             loadSlider(slider, default_text);
         }

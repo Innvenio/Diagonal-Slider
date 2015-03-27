@@ -52,3 +52,12 @@ $(document).ready(function(){
 	$('.gallery_content').createDiagonalSlider();
 });
 ```
+
+<br/><br/>
+Result:
+<br/>
+<img src="http://app.uy/innvenio/github/diagonalslider1.png"/>
+<br/>
+<img src="http://app.uy/innvenio/github/diagonalslider2.png"/>
+<br/>
+<img src="http://app.uy/innvenio/github/diagonalslider3.png"/>

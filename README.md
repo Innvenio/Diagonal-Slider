@@ -2,6 +2,11 @@
 jQuery plugin to create a Diagonal Slider
 
 <br/>
+<strong>Demo</strong>
+<br/><br/>
+Demo in <a target="_blank" href="http://jsfiddle.net/aesposito/ku3fwu92/">jsFiddle</a>
+
+<br/>
 <strong>How to use</strong>
 <br/><br/>
 

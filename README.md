@@ -1,5 +1,6 @@
 # DiagonalSlider
-jQuery plugin to create a Diagonal Slider
+jQuery plugin to create a Diagonal Slider.<br/>
+The diagonal image slider  works like an accordion that when you mouse hover it expand each image. Also you can add a title to the image to give a brief description.
 
 <br/>
 <strong>Demo</strong>
@@ -47,15 +48,86 @@ Your HTML:
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
-
 ```
+
 <br/><br/>
 Your script:
 <br/>
 ```javascript
 $(document).ready(function(){
-	$('.gallery_content').createDiagonalSlider();
+$('.gallery_content').createDiagonalSlider();
 });
+```
+
+<br/><br/>
+Your css:
+<br/>
+```css
+img
+{
+	display: block;
+	margin: 0px;
+}
+
+.content_title
+{
+	position: absolute;
+	padding: 50px 40px 50px 80px;
+	background-color: #FFF;
+	z-index: 100;
+	font-size: 22px;
+	margin-left: -60px;
+	-webkit-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	-moz-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	-ms-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+}
+
+.content_title .text
+{
+	-webkit-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+	-moz-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+	-ms-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+	transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+}
+
+.content_slider
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery_content
+{
+	overflow: hidden;
+	margin-left: -170px;
+
+}
+
+.gallery_item
+{
+	float: left;
+	overflow: hidden;
+	vertical-align: top;
+	margin-left: -2px;
+	-webkit-transition: width 500ms;
+	-moz-transition: width 500ms;
+	-o-transition: width 500ms;
+	transition: width 500ms;
+	-webkit-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	-moz-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	-ms-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+}
+
+.gallery_item img
+{
+	position: relative;
+	-webkit-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+	-moz-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+	-ms-transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+	transform: translate3d(0, 0, 0) skew(20deg, 0deg);
+}
 ```
 
 <br/><br/>

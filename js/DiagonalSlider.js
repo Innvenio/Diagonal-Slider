@@ -1,5 +1,5 @@
 /*
-validate_form
+DiagonalSlider.js
 jQuery plugin to create diagonal slider
 (c) Innvenio 2015 (@innvenio)
 */

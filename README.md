@@ -55,7 +55,7 @@ Your script:
 <br/>
 ```javascript
 $(document).ready(function(){
-$('.gallery_content').createDiagonalSlider();
+	$('.gallery_content').createDiagonalSlider();
 });
 ```
 
